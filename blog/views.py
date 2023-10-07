@@ -41,3 +41,10 @@ class PostUpdateView(LoginRequiredMixin, UpdateView):
     redirect_field_name = 'blog/post_detail.html'
     form_class = PostForm
     model = Post
+
+
+class PostDeleteView(LoginRequiredMixin, DeleteView):
+    login_url = '/login/'
+    model = Post
+    success_url = reverse_lazy("post_list")
+    # success_url = reverse_lazy("blog:post_list")
