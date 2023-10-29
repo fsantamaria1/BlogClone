@@ -46,6 +46,30 @@
   font-size: 1.5em;
 }
 
+body {
+  background-color: #dddddd;
+}
+
+
+.editable{
+  height: 300px;
+  border-width: 2px;
+  background-color: white !important;;
+}
+
+.medium-editor-textarea{
+  height: 300px;
+  border-color: #333333;
+  background-color: white;
+}
+
+.editable medium-editor-textarea postcontent {
+  height: 300px;
+  border-color: #333333;
+  border-width: 5px;
+  background-color: white;
+}
+
 
 /*COLOR CHANGER*/
 /*Credit and Source: http://codepen.io/thapliyalshivam/pen/dvgXVO*/
@@ -84,4 +108,24 @@
     100%{filter:hue-rotate(360deg);}
   
   }
+
+  /* styles for links */
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: inherit;
+}
+
+a.btn {
+ text-decoration: none;
+}
+
+a.btn:hover {
+ text-decoration: none;
+}
   
